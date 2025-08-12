@@ -1,1 +1,1 @@
-# microchip
+Simple implementation of the ATmega1284(P) programmable microcontroller using a virtual port (COM3/COM4), simulation of the controller's operation through SimulIDE, and a simple graphical interface in C#. Programming the chip in C using the Microchip Studio program
