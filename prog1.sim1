@@ -1,0 +1,43 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega1284-3" mainComp="false" Show_id="true" Show_Val="false" Pos="-32,-144" rotation="0" hflip="1" vflip="1" label="mega1284-3" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="GccApplication1/GccApplication1/Debug/GccApplication1.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Resistor" CircId="Resistor-7" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-148,-72" rotation="0" hflip="1" vflip="1" label="Resistor-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="5000 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-8" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="100,-144" rotation="0" hflip="1" vflip="1" label="Resistor-8" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-9" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="100,-96" rotation="0" hflip="1" vflip="1" label="Resistor-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="50 Ω" />
+
+<item itemtype="Led" CircId="Led-10" mainComp="false" ShowProp="Color" Show_id="false" Show_Val="true" Pos="176,-144" rotation="0" hflip="1" vflip="1" label="Led-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="1.8 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-11" mainComp="false" ShowProp="Color" Show_id="false" Show_Val="true" Pos="172,-92" rotation="0" hflip="1" vflip="1" label="Led-11" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Blue" Grounded="false" Threshold="3.6 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-12" mainComp="false" Show_id="false" Show_Val="false" Pos="240,-128" rotation="0" hflip="1" vflip="1" label="Ground-12" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-13" mainComp="false" Show_id="false" Show_Val="false" Pos="280,-68" rotation="0" hflip="1" vflip="1" label="Ground-13" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="SerialPort" CircId="SerialPort-14" mainComp="false" Show_id="false" Show_Val="false" Pos="-124,20" rotation="0" hflip="-1" vflip="1" label="SerialPort-14" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="false" Port="COM4" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="Rail" CircId="Rail-19" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-224,-108" rotation="90" hflip="1" vflip="1" label="Rail-19" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Resistor-7-rPin" endpinid="mega1284-3-RST" pointList="-132,-72,-40,-72" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="mega1284-3-PORTA1" endpinid="Resistor-8-lPin" pointList="24,-128,84,-128,84,-144" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Resistor-8-rPin" endpinid="Led-10-lPin" pointList="116,-144,160,-144" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Led-10-rPin" endpinid="Ground-12-Gnd" pointList="192,-144,240,-144" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="mega1284-3-PORTA3" endpinid="Resistor-9-lPin" pointList="24,-112,24,-108,84,-108,84,-96" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Resistor-9-rPin" endpinid="Led-11-lPin" pointList="116,-96,116,-92,156,-92" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Led-11-rPin" endpinid="Ground-13-Gnd" pointList="188,-92,280,-92,280,-84" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Rail-19-outnod" endpinid="Resistor-7-lPin" pointList="-224,-92,-224,-72,-164,-72" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="SerialPort-14-pin0" endpinid="mega1284-3-PORTD0" pointList="-84,12,-84,-32,-40,-32" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="SerialPort-14-pin1" endpinid="mega1284-3-PORTD1" pointList="-84,28,-60,28,-60,-24,-40,-24" />
+
+</circuit>
